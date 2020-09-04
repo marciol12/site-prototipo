@@ -1,19 +1,42 @@
-@charset "UTF-8"
+@charset "UTF-8";
 
-body{
-	background-color: silver;
-	margin:auto;
+/* folha do principal.html*/
+
+body {
+    background-color: #F2EAE8;
+    margin: auto;
+    overflow-y: hidden;
 }
-#cabecalho{
-	margin-bottom: 1px;
+#cabecalho {
+    margin-bottom: 1px;
+    background-image: url('./img.jpg.jpg');
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 nav#menu{
-	display:flex;
-	justify-content: center;
+    display: flex;
+    justify-content: center;
+
+} 
+#presentation{
+  padding:0;
+  width:50%;
+  height: 10px;
+  margin: auto;
+  position: relative;
+  z-index: 6;   
 }
+
 nav#menu ul{
-	list-style: none;
+    list-style: none;
 	position: relative;
+    text-decoration:none; 
+    margin: auto;
+    padding:top 0%;
 }
 nav#menu li{
 	display: inline-block;
@@ -22,51 +45,95 @@ nav#menu li{
 	font-weight: normal;
 	font-size:25px;
 	background-color:#D3D3D3;
-	margin: 18px;
+	margin:18px;
+     
 }
-nav#menu{
+nav#menu li:hover{
+    background-color:#1a8099;
+}
+nav#menu a{
 	text-decoration: none;
-	color:#808080;
+    color:#fcfafae3;
+    
+}  
+
+/* folha de css do formulario*/
+body{
+    background-color:white;
+    display: inline;
+    margin: auto;
+    padding:2px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 120%; 
+}
+#ctm,
+#cdm,
+#tdm,
+#bm,
+#ssb,
+#lnome{
+    margin-left:2px;
+    margin-bottom: 2px;
+}
+fieldset{
+    background-color: yellowgreen;
+}
+form{
+    display:block;
+    padding: auto;
+}
+/* estilo do aboutme.html */
+
+body {
+    background-color: #F2EAE8;
+    margin: auto;
+    overflow-y: hidden;
+}
+
+#cabecalho {
+    margin-bottom: 1px;
+    background-image: url('./img.jpg.jpg');
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+#present{
+    padding:0;
+    width:50%;
+    height: 10px;
+    margin: auto;
+    position: relative;
+    z-index: 8;   
+}
+#im{
+    margin:190px;
+    background-image: url('./img.jpg.jpg');
+    background-position: absolute;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+}
+section#present{
+    position: absolute;
+    margin: 60px;
+    display:block;
+    
+         
+}
+h1{
+ display:block;
+    
 
 }
-#ft{
-	position: relative;
-	width: 800px;
-	float: right;
-	margin:auto;
-	border: auto;
-	padding:0;
+#id{
+     float:right;
+     padding:250px;
 }
-h2{
-	font-family: cursive;
-	font-size:25px;
-}
-#index{
-	position:relative;
-	top:150px;
-	margin-left: 12px;
-	padding: 2px:;
-}
-#index h2{
-	margin-bottom: 1px;
-}
-#brs p{
-     font-family:monospace;
-     margin-top: 2px;
-     font-size:14px;
-}
-#botao{
-	position:absolute;
-	margin:4px;
-	margin-right:1px;
-	border:3px solid white;
-	padding: 5px;
-	background-color: red;
-	box-shadow: 1px 2px 3px black;
-}
-#botao a{
-	font-family: monospace;
-	font-size: 12px;
-	color:#F0FFFF;
-	text-decoration: none;
-}
+    
+
+
+
